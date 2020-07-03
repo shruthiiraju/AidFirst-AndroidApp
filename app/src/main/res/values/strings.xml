@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AidFirstTest1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_missing_permissions">Cannot start without required permissions</string>
+
+    <string name="toast_connected">Connected to %s</string>
+    <string name="toast_disconnected">Disconnected from %s</string>
+
+    <string name="status_unknown">Please wait</string>
+    <string name="status_connected">Hold any of the volume keys to talk</string>
+    <string name="status_searching">Looking for a device to connect to...</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+
+</resources>

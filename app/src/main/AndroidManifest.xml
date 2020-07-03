@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aidfirsttest1">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Required for recording audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- For shake-to-advertise -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyACpn4gDLv71yX81fVpl1O1fqqCU_riyqI"/>
+        <activity android:name=".VictimAcceptedActivity"></activity>
+        <activity android:name=".HeroAcceptRejectActivity" />
+        <activity android:name=".P2PRecieverActivity" />
+        <activity android:name=".P2PActivity" />
+        <activity android:name=".ConnectionsActivity" />
+        <activity android:name=".CitizenAssistRegisterActivity" />
+        <activity android:name=".CitizenAssistHomepageActivity" />
+        <activity android:name=".HeroHomepageActivity" />
+        <activity android:name=".HeroRegisterActivity" />
+        <activity android:name=".CitizenAssistActivity" />
+        <activity android:name=".HeroActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
